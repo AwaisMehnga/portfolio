@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --color-surface: #ffffff;
+  --color-ink: #051316;
+  --color-muted: #5b3353;
+  --color-border: #d8d8d8;
+  --color-brand: #ec2e3a;
+  --color-brand-soft: #ffdfda;
+
+  --text-display: clamp(2.75rem, 5vw, 5.5rem);
+  --text-display--line-height: 1;
+  --text-title: clamp(1.625rem, 2.3vw, 2.5rem);
+  --text-title--line-height: 1.25;
+  --text-subtitle: clamp(0.875rem, 1.05vw, 1.125rem);
+  --text-subtitle--line-height: 1.3;
+  --text-chip: 0.875rem;
+  --text-chip--line-height: 1.2;
+  --text-button: clamp(1rem, 1.2vw, 1.5rem);
+  --text-button--line-height: 1.2;
+
+  --radius-card: 1rem;
+  --radius-chip: 0.75rem;
+  --radius-button: 1.125rem;
+
+  --shadow-chip: 0 9px 20px rgba(0, 0, 0, 0.06);
+}
+
+:root {
+  --ds-space-container-x: clamp(1rem, 4vw, 2.5rem);
+  --ds-space-section-y: clamp(2.5rem, 6vw, 5rem);
+  --ds-space-hero-pad: clamp(2.5rem, 10vw, 10rem);
+}
+
+@layer base {
+  body {
+    @apply m-0 bg-surface font-sans text-ink antialiased;
+  }
+}
