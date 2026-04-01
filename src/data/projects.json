@@ -1,0 +1,42 @@
+[
+  {
+    "id": "folio-engine",
+    "title": "Folio Engine",
+    "description": "A high-performance portfolio CMS with block-based editing and one-click publishing pipelines.",
+    "techStack": ["React", "TypeScript", "Node.js", "PostgreSQL"],
+    "thumbnail": "https://placehold.co/1200x720/121212/f4f4f4?text=Folio+Engine",
+    "liveUrl": "https://example.com/folio-engine",
+    "githubUrl": "https://github.com/example/folio-engine",
+    "featured": true
+  },
+  {
+    "id": "traceboard",
+    "title": "Traceboard Analytics",
+    "description": "A collaborative product analytics dashboard with real-time insight streams and event replay.",
+    "techStack": ["Next.js", "Tailwind CSS", "Supabase", "Chart.js"],
+    "thumbnail": "https://placehold.co/1200x720/f8f4f1/121212?text=Traceboard+Analytics",
+    "liveUrl": "https://example.com/traceboard",
+    "githubUrl": "https://github.com/example/traceboard",
+    "featured": true
+  },
+  {
+    "id": "wavecart",
+    "title": "WaveCart",
+    "description": "A conversion-focused storefront with intelligent bundles, recommendation rails, and lightning-fast checkout.",
+    "techStack": ["Vite", "React", "Stripe", "Express"],
+    "thumbnail": "https://placehold.co/1200x720/ffe6e1/1d1d1d?text=WaveCart",
+    "liveUrl": "https://example.com/wavecart",
+    "githubUrl": "https://github.com/example/wavecart",
+    "featured": true
+  },
+  {
+    "id": "pixelpost",
+    "title": "PixelPost",
+    "description": "A social publishing app focused on long-form storytelling and creator monetization.",
+    "techStack": ["React", "Firebase", "Cloud Functions", "GSAP"],
+    "thumbnail": "https://placehold.co/1200x720/eef9ff/0a1f28?text=PixelPost",
+    "liveUrl": "https://example.com/pixelpost",
+    "githubUrl": "https://github.com/example/pixelpost",
+    "featured": false
+  }
+]

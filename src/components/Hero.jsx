@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Button from './ui/button'
 
 const HERO_SKILLS = [
   { name: 'TypeScript', left: 61.2553, top: 60.2133, depth: 0.8178058871647367 },
@@ -55,10 +56,7 @@ function Hero() {
             }}
           >
             <div className="z-[1000] flex items-center bg-[url('https://wellfound.com/landing-page-assets/64626a4a74818ca87606a29e/646da3412c037b5778b74830_gradient-shadow.png')] bg-cover bg-[0_0] p-[var(--ds-space-hero-pad)]">
-              <div className="rounded-card border-2 border-dashed border-brand bg-surface px-6 pb-3 pt-5 md:px-9 md:pb-4 md:pt-7">
-                <p className="mb-2 text-center text-subtitle font-medium text-muted">
-                  Full Stack Software Developer
-                </p>
+              <div className="rounded-card border-2 border-dashed border-brand bg-surface px-6 py-4 md:px-9 md:py-4 ">
                 <h1 className="m-0 text-center text-display font-semibold tracking-[-0.04em]">
                   Muhammad Awais
                 </h1>
@@ -85,25 +83,31 @@ function Hero() {
         </div>
       </div>
 
-      <div className="border-t border-border py-[var(--ds-space-section-y)] max-[767px]:px-4">
+      <div className="py-[var(--ds-space-section-y)] max-[767px]:px-4">
         <div className="mx-auto max-w-[1400px] px-[var(--ds-space-container-x)] max-[767px]:px-0">
           <div className="flex flex-col items-center justify-between gap-10 max-[991px]:gap-6">
-            <h2 className="m-0 text-center text-title font-semibold tracking-[-0.02em]">
-              Building products that people love to use
+            <h2 className="flex m-0 justify-center items-center gap-4 text-title font-semibold tracking-[-0.02em]">
+              Learn <span className="h-2 w-2 rounded-full bg-brand block"></span> Build <span className="h-2 w-2 rounded-full bg-brand block"></span> Open Source
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
-              <a
-                href="#"
-                className="inline-block h-auto rounded-button border border-ink bg-ink px-12 py-6 text-center text-button font-medium text-surface no-underline transition-all duration-300 hover:border-brand hover:bg-brand-soft hover:text-brand hover:shadow-[0_0_0_4px_rgba(236,46,58,0.25)] max-[991px]:px-6 max-[991px]:py-4 max-[767px]:w-full"
+              <Button
+                as="a"
+                href="#featured-projects"
+                variant="default"
+                size="lg"
+                className="max-[767px]:w-full"
               >
                 View My Projects
-              </a>
-              <a
-                href="#"
-                className="inline-block h-auto rounded-button border border-border bg-surface px-12 py-6 text-center text-button font-medium text-ink no-underline transition-all duration-300 hover:border-brand hover:bg-brand-soft hover:text-brand hover:shadow-[0_0_0_4px_rgba(236,46,58,0.25)] max-[991px]:px-6 max-[991px]:py-4 max-[767px]:w-full"
+              </Button>
+              <Button
+                as="a"
+                href="#contact"
+                variant="secondary"
+                size="lg"
+                className="max-[767px]:w-full"
               >
                 Get In Touch
-              </a>
+              </Button>
             </div>
           </div>
         </div>

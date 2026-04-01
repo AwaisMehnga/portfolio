@@ -35,6 +35,10 @@
   --ds-space-hero-pad: clamp(2.5rem, 10vw, 10rem);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
     @apply m-0 bg-surface font-sans text-ink antialiased;
