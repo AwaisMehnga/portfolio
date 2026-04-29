@@ -8,6 +8,7 @@ const SOCIAL_LINKS = [
   { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/awaismehnga' },
   { id: 'github', label: 'GitHub', href: 'https://github.com/awaismehnga' },
   { id: 'phone', label: '+92 314 3151021', href: 'tel:+923143151021' },
+  { id: 'resume', label: 'Resume', href: 'resume.awaismehnga.dev' },
 ]
 
 function Contact() {
