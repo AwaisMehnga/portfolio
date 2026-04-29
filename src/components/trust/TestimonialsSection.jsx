@@ -6,7 +6,6 @@ import SectionHeader from '../ui/section-header'
 function TestimonialsSection() {
   const sectionRef = useRef(null)
   const headerRef = useRef(null)
-  const railRef = useRef(null)
   const cardRefs = useRef([])
 
   useGSAP(
@@ -48,17 +47,6 @@ function TestimonialsSection() {
           },
         },
       )
-
-      gsap.to(railRef.current, {
-        xPercent: -4,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: 1,
-        },
-      })
 
       const cleanup = cardRefs.current.map((card) => {
         if (!card) {
@@ -108,21 +96,21 @@ function TestimonialsSection() {
     <section
       id="testimonials"
       ref={sectionRef}
-      className="bg-[radial-gradient(circle_at_bottom_right,_rgba(5,19,22,0.08),_transparent_34%),#fff] py-[var(--ds-space-section-y)]"
+      className="overflow-hidden bg-[radial-gradient(circle_at_bottom_right,rgba(5,19,22,0.08),transparent_34%),#fff] py-(--ds-space-section-y)"
     >
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-8 px-[var(--ds-space-container-x)]">
+      <div className="mx-auto flex max-w-350 flex-col gap-8 px-(--ds-space-container-x)">
         <div ref={headerRef}>
-          <SectionHeader title="Testimonials" description="What clients and managers said after shipping together." />
+          <SectionHeader title="Testimonials" description="What clients and team members said about me." />
         </div>
 
-        <div ref={railRef} className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3 [scrollbar-width:thin]">
+        <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto overflow-y-hidden pb-3 [scrollbar-width:thin]">
           {testimonials.map((item, index) => (
             <article
               key={item.id}
               ref={(node) => {
                 cardRefs.current[index] = node
               }}
-              className="min-w-[19rem] max-w-[22rem] shrink-0 snap-start rounded-[1.2rem] border border-border/80 bg-surface p-5 shadow-none [transform-style:preserve-3d] will-change-transform"
+              className="min-w-76 max-w-88 shrink-0 snap-start rounded-[1.2rem] border border-border/80 bg-surface p-5 shadow-none transform-3d will-change-transform"
             >
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3">

@@ -112,13 +112,13 @@ function TechStack() {
     <section
       id="tech-stack"
       ref={sectionRef}
-      className="bg-[radial-gradient(circle_at_top_left,_rgba(236,46,58,0.08),_transparent_42%),#fff] py-[var(--ds-space-section-y)]"
+      className="bg-[radial-gradient(circle_at_top_left,rgba(236,46,58,0.08),transparent_42%),#fff] py-(--ds-space-section-y)"
     >
-      <div className="mx-auto max-w-[1400px] px-[var(--ds-space-container-x)]">
+      <div className="mx-auto max-w-350 px-(--ds-space-container-x)">
         <div ref={headerRef} className="mb-12 max-w-3xl">
           <SectionHeader
             title="Tech Stack"
-            description="Frontend, backend, and delivery tools I use to design, build, and ship products."
+            description="Frontend, backend, APIs, and engineering practices used to ship maintainable software."
           />
         </div>
 
@@ -129,7 +129,7 @@ function TechStack() {
               ref={(node) => {
                 groupRefs.current[group.id] = node
               }}
-              className="group rounded-[1.25rem] border border-border bg-surface p-5 shadow-[0_14px_35px_rgba(0,0,0,0.06)] transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)] [transform-style:preserve-3d] will-change-transform"
+              className="group rounded-[1.25rem] border border-border bg-surface p-5 shadow-[0_14px_35px_rgba(0,0,0,0.06)] transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-1 hover:border-brand/40 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)] transform-3d will-change-transform"
             >
               <div className={`mb-4 rounded-card bg-linear-to-r ${group.accentClass} p-4`}>
                 <h3 className="m-0 text-[1.15rem] font-semibold tracking-[-0.015em]">{group.title}</h3>

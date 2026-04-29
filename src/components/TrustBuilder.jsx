@@ -7,11 +7,11 @@ import StatisticsSection from './trust/StatisticsSection'
 function TrustBuilder() {
   return (
     <>
+      <StatisticsSection />
       <ExperienceSection />
       <TestimonialsSection />
       <EducationSection />
       <CertificationsSection />
-      <StatisticsSection />
     </>
   )
 }

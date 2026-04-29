@@ -31,7 +31,7 @@
 
 :root {
   --ds-space-container-x: clamp(1rem, 4vw, 2.5rem);
-  --ds-space-section-y: clamp(2.5rem, 6vw, 5rem);
+  --ds-space-section-y: 4rem;
   --ds-space-hero-pad: clamp(2.5rem, 10vw, 10rem);
 }
 

@@ -2,6 +2,8 @@ import Hero from './components/Hero'
 import TechStack from './components/TechStack'
 import FeaturedProjects from './components/FeaturedProjects'
 import TrustBuilder from './components/TrustBuilder'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <FeaturedProjects />
       <TechStack />
       <TrustBuilder />
+      <Contact />
+      <Footer/>
     </>
   )
 }

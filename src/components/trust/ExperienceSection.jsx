@@ -8,7 +8,6 @@ function ExperienceSection() {
   const headerRef = useRef(null)
   const lineFillRef = useRef(null)
   const timelineItemsRef = useRef([])
-  const markerRefs = useRef([])
 
   useGSAP(
     () => {
@@ -45,20 +44,6 @@ function ExperienceSection() {
           },
         },
       )
-
-      gsap.to(markerRefs.current, {
-        scale: 1.35,
-        duration: 1.2,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-        stagger: { each: 0.12 },
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 80%',
-          toggleActions: 'play pause resume pause',
-        },
-      })
 
       timelineItemsRef.current.forEach((el, index) => {
         if (!el) {
@@ -142,11 +127,14 @@ function ExperienceSection() {
     <section
       id="experience"
       ref={sectionRef}
-      className="bg-[radial-gradient(circle_at_top_left,_rgba(236,46,58,0.12),_transparent_42%),#fff] py-[var(--ds-space-section-y)]"
+      className="bg-[radial-gradient(circle_at_top_left,rgba(236,46,58,0.12),transparent_42%),#fff] py-(--ds-space-section-y)"
     >
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-12 px-[var(--ds-space-container-x)]">
+      <div className="mx-auto flex max-w-350 flex-col gap-12 px-(--ds-space-container-x)">
         <div ref={headerRef}>
-          <SectionHeader title="Experience" description="Career timeline with real delivery milestones." />
+          <SectionHeader
+            title="Experience"
+            description="Hands-on delivery across learning platforms, ecommerce automation, and API integrations."
+          />
         </div>
 
         <div className="relative">
@@ -169,17 +157,11 @@ function ExperienceSection() {
                     isLeft ? 'pr-[52%] text-right max-[991px]:pr-0 max-[991px]:pl-12 max-[991px]:text-left' : 'pl-[52%] max-[991px]:pl-12'
                   }`}
                 >
-                  <span className="absolute left-1/2 top-9 z-10 h-3.5 w-3.5 -translate-x-1/2 rounded-full border border-brand bg-surface max-[991px]:left-3" />
-                  <span
-                    ref={(node) => {
-                      markerRefs.current[index] = node
-                    }}
-                    className="absolute left-1/2 top-9 z-20 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-brand/75 max-[991px]:left-3"
-                  />
+                  <span className="absolute left-1/2 top-9 z-20 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-brand max-[991px]:left-3" />
 
                   <article
                     data-exp-card
-                    className="inline-block w-full max-w-[34rem] rounded-[1.15rem] border border-border bg-surface/95 p-5 shadow-[0_16px_35px_rgba(0,0,0,0.08)] [transform-style:preserve-3d] will-change-transform"
+                    className="inline-block w-full max-w-136 rounded-[1.15rem] border border-border bg-surface/95 p-5 shadow-[0_16px_35px_rgba(0,0,0,0.08)] transform-3d will-change-transform"
                   >
                     <div className="flex flex-col gap-1.5">
                       <p className="font-mono text-chip uppercase tracking-[0.12em] text-brand">{item.period}</p>

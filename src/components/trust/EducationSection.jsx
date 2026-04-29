@@ -84,8 +84,8 @@ function EducationSection() {
   )
 
   return (
-    <section id="education" ref={sectionRef} className="bg-surface pt-[var(--ds-space-section-y)] pb-5">
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-8 px-[var(--ds-space-container-x)]">
+    <section id="education" ref={sectionRef} className="bg-surface pt-(--ds-space-section-y) pb-5">
+      <div className="mx-auto flex max-w-350 flex-col gap-8 px-(--ds-space-container-x)">
         <div ref={headerRef}>
           <SectionHeader title="Education Background" />
         </div>

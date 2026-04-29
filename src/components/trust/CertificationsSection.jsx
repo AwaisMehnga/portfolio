@@ -88,8 +88,8 @@ function CertificationsSection() {
   )
 
   return (
-    <section id="certifications" ref={sectionRef} className="bg-surface pt-3 pb-[var(--ds-space-section-y)]">
-      <div className="mx-auto max-w-[1400px] px-[var(--ds-space-container-x)]">
+    <section id="certifications" ref={sectionRef} className="bg-surface pt-3 pb-(--ds-space-section-y)">
+      <div className="mx-auto max-w-350 px-(--ds-space-container-x)">
         <SectionHeader
           title="Certifications"
           description="Verified credentials and proof links."
@@ -102,7 +102,7 @@ function CertificationsSection() {
               ref={(node) => {
                 cardRefs.current[index] = node
               }}
-              className="list-none rounded-[1.1rem] border border-border bg-surface p-5 shadow-none [transform-style:preserve-3d] will-change-transform"
+              className="list-none rounded-[1.1rem] border border-border bg-surface p-5 shadow-none transform-3d will-change-transform"
             >
               <div className="flex flex-col gap-1.5">
                 <p className="font-mono text-chip uppercase tracking-[0.12em] text-brand">{item.type}</p>

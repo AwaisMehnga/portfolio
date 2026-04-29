@@ -1,85 +1,73 @@
 export const experienceTimeline = [
   {
     id: 'exp-1',
-    period: '2024 - Present',
-    role: 'Freelance Full-Stack Developer',
-    org: 'Independent',
-    summary: 'Delivered product websites and web apps for startups, handling UI, API integration, and deployment.',
+    period: '05/2025 - Present',
+    role: 'Full Stack Developer',
+    org: 'HKS Techlabs (On-Site)',
+    summary:
+      'Built scalable web applications and automation systems across learning and ecommerce platforms using React, Laravel, Supabase, Docker and Node.js.',
   },
   {
     id: 'exp-2',
-    period: '2023 - 2024',
-    role: 'Frontend Developer Intern',
-    org: 'Product Studio',
-    summary: 'Built reusable React components and improved page performance for high-traffic marketing pages.',
-  },
-  {
-    id: 'exp-3',
-    period: '2022 - 2023',
-    role: 'Web Developer',
-    org: 'University Projects Lab',
-    summary: 'Collaborated on internal tools and dashboards for campus teams, focusing on accessibility and UX.',
+    period: '2023 - 2025',
+    role: 'Full Stack Developer Freelance',
+    org: 'HKS Techlabs',
+    summary:
+      'I delivered frontend and backend solutions for clients in education, management and ecommerce as well as completed government level projects including Sir Syed Elibrary site for my city Hasilpur, petrol pump management system and more using React, PHP, Tailwind CSS, Node.js, Next.js and Vercel.',
   },
 ]
 
 export const testimonials = [
   {
     id: 't-1',
-    quote: 'Awais consistently turns rough ideas into polished interfaces and communicates every milestone clearly.',
-    author: 'Sara Malik',
-    title: 'Product Manager, Product Studio',
-    avatar: 'https://placehold.co/160x160/f3d7cf/2b1410?text=SM',
+    quote: 'Awais is a software engineer who loves learning new tools and technologies. I worked with him for over a year and I’m glad he was part of our team. He pays close attention to detail, never backs down from a challenge, and is excellent at solving problems. I’d recommend him to any team looking for a skilled and reliable engineer.',
+    author: 'Zahid Ali',
+    title: 'Development Team Lead @ HKS TechLabs ',
+    avatar: '/profiles/zahid.webp',
   },
   {
     id: 't-2',
-    quote: 'Strong ownership mindset. He shipped fast, improved code quality, and made collaboration very smooth.',
-    author: 'Hamza Rahman',
-    title: 'Engineering Lead, Freelance Client',
-    avatar: 'https://placehold.co/160x160/d8ebf8/112030?text=HR',
-  },
-  {
-    id: 't-3',
-    quote: 'Excellent at translating product requirements into interfaces users instantly understand.',
-    author: 'Areeba Khan',
-    title: 'Founder, Startup Client',
-    avatar: 'https://placehold.co/160x160/e4f2de/12230f?text=AK',
+    quote: 'Awais is a talented developer with strong collaborative skills and is a truly dependable resource for the team. He understands concepts quickly and drives solutions efficiently, consistently delivering solid results.',
+    author: 'MD Bilal',
+    title: 'Lead Software Engineer | PHP Laravel React',
+    avatar: '/profiles/md-bilal.jpeg',
   },
 ]
 
-export const workedWith = ['Upwork Clients', 'Startup Founders', 'Product Studio', 'University Lab', 'Open Source Teams']
+export const workedWith = ['HKS Techlabs', 'CoursePro.today', 'MobileMonster.com.au', 'COMSATS University', 'Open Source']
 
 export const stats = [
-  { id: 's-1', label: 'Projects Completed', value: 50, suffix: '+' },
+  { id: 's-1', label: 'Projects Completed', value: 11, suffix: '+' },
   { id: 's-2', label: 'Years Experience', value: 3, suffix: '+' },
-  { id: 's-3', label: 'Frontend Components Built', value: 120, suffix: '+' },
-  { id: 's-4', label: 'Code Reviews & Iterations', value: 300, suffix: '+' },
+  { id: 's-3', label: 'LeetCode Problems Solved', value: 75, suffix: ' ' },
+  { id: 's-4', label: 'Open Source Contributions', value: 2, suffix: '+' },
 ]
 
 export const education = [
   {
     id: 'e-1',
     type: 'Education',
-    title: 'BS Computer Science',
-    issuer: 'University Program',
-    year: '2022 - 2026',
+    title: 'B.S. in Computer Science (CGPA: 3.92 / 4.00)',
+    issuer: 'COMSATS University Islamabad, Pakistan',
+    year: 'Feb 2022 - Jan 2026',
   },
 ]
 
 export const certifications = [
-  {
-    id: 'c-1',
-    type: 'Certification',
-    title: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    year: '2025',
-    proofUrl: 'https://www.credly.com/',
-  },
-  {
-    id: 'c-2',
-    type: 'Certification',
-    title: 'Meta Front-End Developer Professional Certificate',
-    issuer: 'Meta',
-    year: '2024',
-    proofUrl: 'https://www.coursera.org/professional-certificates/meta-front-end-developer',
-  },
+  // {
+  //   id: 'c-1',
+  //   type: 'Certification',
+  //   title: 'AWS Certified Cloud Practitioner',
+  //   issuer: 'Amazon Web Services',
+  //   year: '2025',
+  //   proofUrl: 'https://www.credly.com/',
+  // },
+  // {
+  //   id: 'c-2',
+  //   type: 'Certification',
+  //   title: 'Meta Front-End Developer Professional Certificate',
+  //   issuer: 'Meta',
+  //   year: '2024',
+  //   proofUrl: 'https://www.coursera.org/professional-certificates/meta-front-end-developer',
+  // },
 ]

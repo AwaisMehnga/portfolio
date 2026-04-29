@@ -95,11 +95,14 @@ function FeaturedProjects() {
     <section
       id="featured-projects"
       ref={sectionRef}
-      className="relative overflow-hidden bg-surface py-[var(--ds-space-section-y)]"
+      className="relative overflow-hidden bg-surface py-(--ds-space-section-y)"
     >
-      <div className="relative mx-auto max-w-[1400px] px-[var(--ds-space-container-x)]">
+      <div className="relative mx-auto max-w-350 px-(--ds-space-container-x)">
         <div ref={titleRef} className="mb-12 flex flex-wrap items-end justify-between gap-6">
-          <SectionHeader title="Featured Projects" description="A curated selection of products I shipped end-to-end." />
+          <SectionHeader
+            title="Featured Projects"
+            description="Selected work from my project directory."
+          />
           <a
             href="#featured-projects"
             className="inline-flex items-center gap-2 rounded-chip border border-border bg-surface px-5 py-3 font-mono text-chip font-medium no-underline transition-[transform,border-color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:border-brand hover:shadow-[0_8px_24px_rgba(236,46,58,0.2)]"
@@ -116,16 +119,16 @@ function FeaturedProjects() {
               ref={(node) => {
                 cardsRef.current[index] = node
               }}
-              className="group relative overflow-hidden rounded-[1.4rem] border border-border/80 bg-surface/95 p-4 shadow-[0_20px_50px_rgba(0,0,0,0.08)] [transform-style:preserve-3d]"
+              className="group relative overflow-hidden rounded-[1.4rem] border border-border/80 bg-surface/95 p-4 shadow-[0_20px_50px_rgba(0,0,0,0.08)] transform-3d"
             >
               <div className="relative overflow-hidden rounded-[1rem] border border-border/90">
                 <img
                   src={project.thumbnail}
                   alt={`${project.title} project thumbnail`}
                   loading="lazy"
-                  className="aspect-[16/10] w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  className="aspect-16/10 w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-ink/15 via-transparent to-transparent opacity-90" />
+                <div className="pointer-events-none absolute inset-0 bg-linear-to-tr from-ink/15 via-transparent to-transparent opacity-90" />
               </div>
 
               <div className="pt-4">
@@ -144,12 +147,13 @@ function FeaturedProjects() {
                 </ul>
 
                 <div className="mt-5 flex flex-wrap gap-3">
-                  <Button as="a" href={project.liveUrl} target="_blank" rel="noreferrer" size="sm">
-                    Live Site
-                  </Button>
-                  <Button as="a" href={project.githubUrl} target="_blank" rel="noreferrer" size="sm" variant="secondary">
-                    GitHub
-                  </Button>
+                  {
+                    project?.urls?.length > 0 && project?.urls?.map((url) => (
+                      <Button as="a" href={url.href} target="_blank" rel="noreferrer" size="sm" variant={url.variant || 'secondary'}>
+                        {url.label}
+                      </Button>
+                    ))
+                  }
                 </div>
               </div>
             </article>
