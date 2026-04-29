@@ -141,11 +141,6 @@ function Contact() {
               Available for new projects
             </div>
 
-            <div className="flex flex-wrap gap-3">
-              <Button as="a" href="#footer-contact-form" size="lg">
-                Let&apos;s Talk
-              </Button>
-            </div>
 
             <ul className="flex flex-wrap gap-3 p-0">
               {SOCIAL_LINKS.map((item, index) => (
