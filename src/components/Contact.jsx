@@ -172,10 +172,12 @@ function Contact() {
             onSubmit={handleSubmit}
             className="rounded-[1.2rem] border border-border bg-surface p-5 shadow-[0_18px_44px_rgba(0,0,0,0.08)]"
           >
+            <p className='font-mono text-chip uppercase tracking-[0.12em] text-brand'>This is coming soon!</p>
             <div className="grid gap-3 sm:grid-cols-2">
               <label className="flex flex-col gap-1.5">
                 <span className="text-chip font-medium text-ink/75">Name</span>
                 <input
+                  disabled
                   name="name"
                   type="text"
                   required
@@ -187,6 +189,7 @@ function Contact() {
               <label className="flex flex-col gap-1.5">
                 <span className="text-chip font-medium text-ink/75">Email</span>
                 <input
+                  disabled
                   name="email"
                   type="email"
                   required
@@ -198,6 +201,7 @@ function Contact() {
               <label className="flex flex-col gap-1.5 sm:col-span-2">
                 <span className="text-chip font-medium text-ink/75">Project Brief</span>
                 <textarea
+                  disabled
                   name="message"
                   rows={5}
                   required
@@ -211,7 +215,6 @@ function Contact() {
               <Button disabled type="submit" size="default">
                 Send Message
               </Button>
-              <p className="m-0 text-chip text-ink/65">This is coming soon!</p>
             </div>
           </form>
         </div>

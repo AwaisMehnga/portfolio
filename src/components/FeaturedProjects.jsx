@@ -146,6 +146,21 @@ function FeaturedProjects() {
                   ))}
                 </ul>
 
+                {/* collaborators */}
+                {project?.collaborators?.length > 0 && (
+                  <div className="mt-4 flex items-center gap-3">
+                    <span className="text-sm font-medium text-ink/80">Collaborators:</span>
+                    <ul className="flex flex-wrap gap-2 p-0">
+                      {project.collaborators.map((collaborator) => (
+                        <a key={collaborator.name} href={collaborator.linkedin} target="_blank" rel="noreferrer" className='inline-flex items-center gap-2 rounded-chip border border-border bg-surface px-2 py-1 font-mono text-chip font-medium text-ink/85 no-underline transition-[transform,border-color,background-color,color,box-shadow] duration-200 ease-out hover:-translate-y-0.5 hover:border-brand hover:bg-brand-soft hover:text-brand hover:shadow-[0_8px_24px_rgba(236,46,58,0.2)]'>
+                        
+                          {collaborator.name}
+                        </a>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
                 <div className="mt-5 flex flex-wrap gap-3">
                   {
                     project?.urls?.length > 0 && project?.urls?.map((url) => (

@@ -36,5 +36,69 @@
       }
     ],
     "featured": true
+  },
+  {
+    "id": "coursepro",
+    "title": "CoursePro",
+    "description": "An online learning platform for creating and managing courses.",
+    "techStack": ["Laravel", "React", "Supabase"],
+    "thumbnail": "https://placehold.co/1200x720/f8f4f1/121212?text=CoursePro",
+    "urls": [
+      {
+        "label": "Live Site",
+        "href": "https://coursepro.today/",
+        "variant": "primary"
+      }
+    ],
+    "collaborators": [
+       {
+        "name":"M Awais",
+        "role":"Full Stack Developer",
+        "linkedin":"https://linkedin.com/in/awaismehnga"
+      },
+      {
+        "name": "Zahid Ali",
+        "role": "Team Lead",
+        "linkedin": "https://www.linkedin.com/in/zahid-alee/"
+      },
+      {
+        "name": "MD Bilal",
+        "role": "Backend Team Lead",
+        "linkedin": "https://www.linkedin.com/in/md-bilal-298b701aa/"
+      },
+      {
+        "name": "M Waleed",
+        "role": "Full Stack Developer",
+        "linkedin": "https://www.linkedin.com/in/chwaleed/"
+      }
+    ],
+    "featured": true
+  },
+   {
+    "id": "mobile-monster",
+    "title": "Mobile Monster",
+    "description": "An online mobile phone marketplace for buying and selling used phones.",
+    "techStack": ["Laravel", "React", "Supabase"],
+    "thumbnail": "https://placehold.co/1200x720/f8f4f1/121212?text=Mobile+Monster",
+    "urls": [
+      {
+        "label": "Live Site",
+        "href": "https://mobilemonster.com.au/",
+        "variant": "primary"
+      }
+    ],
+    "collaborators": [
+       {
+        "name":"M Awais",
+        "role":"NodeJS Developer",
+        "linkedin":"https://linkedin.com/in/awaismehnga"
+      },
+      {
+        "name": "Faisal Saleem",
+        "role": "Team Lead",
+        "linkedin": "https://www.linkedin.com/in/faisaljatt369/"
+      }
+    ],
+    "featured": true
   }
 ]
