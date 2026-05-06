@@ -78,7 +78,7 @@
     "id": "mobile-monster",
     "title": "Mobile Monster",
     "description": "An online mobile phone marketplace for buying and selling used phones.",
-    "techStack": ["Laravel", "React", "Supabase"],
+    "techStack": ["Webflow", "NodeJS", "Bubble.io", "Cloudflare", "React", "Make.com"],
     "thumbnail": "https://placehold.co/1200x720/f8f4f1/121212?text=Mobile+Monster",
     "urls": [
       {
