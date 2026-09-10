@@ -1,7 +1,7 @@
 export const experienceTimeline = [
   {
     id: 'exp-1',
-    period: '05/2025 - Present',
+    period: '05/2024 - Present',
     role: 'Full Stack Developer',
     org: 'HKS Techlabs (On-Site)',
     summary:
