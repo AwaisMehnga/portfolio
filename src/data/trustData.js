@@ -1,14 +1,22 @@
 export const experienceTimeline = [
   {
     id: 'exp-1',
-    period: '05/2024 - Present',
+    period: '07/2026 - Present',
+    role: 'Senior Full Stack Engineer',
+    org: 'RemoteShifts (On-Site)',
+    summary:
+      'Working as a Senior Full Stack Engineer, I am responsible for designing and implementing scalable web applications and automation systems across various platforms using React, Laravel. Working as lead on CRM and ERP systems, I am also responsible for mentoring junior developers and ensuring the quality of code and architecture.',
+  },
+  {
+    id: 'exp-2',
+    period: '05/2024 - 06/2026',
     role: 'Full Stack Developer',
     org: 'HKS Techlabs (On-Site)',
     summary:
       'Built scalable web applications and automation systems across learning and ecommerce platforms using React, Laravel, Supabase, Docker and Node.js.',
   },
   {
-    id: 'exp-2',
+    id: 'exp-3',
     period: '2023 - 2025',
     role: 'Full Stack Developer Freelance',
     org: 'HKS Techlabs',
